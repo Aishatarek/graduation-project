@@ -372,10 +372,16 @@ p {
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.headerdiffer{
+  background-color: #f3f3f3 !important;
+}
 nav .nav-item a{
   font-size: 22px !important;
   font-family: 'Spectral', serif;
 
+}
+.headerdiffer .nav-item a{
+color: #2F80ED !important;
 }
 nav img{
 height: 100px;
