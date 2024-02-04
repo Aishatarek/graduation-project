@@ -763,7 +763,7 @@ nav img {
 }
 
 .FirstSection .bg p {
-  color: #0190dd;
+  color: #323450;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
   line-height: 25px;
@@ -789,9 +789,9 @@ nav img {
   background-color: #0190dd;
 
   outline-offset: 5px;
-  padding: 5px 30px;
+  padding: 10px 40px;
   color: white;
-  margin-top: 20px;
+  margin-top: 35px;
 
 }
 
