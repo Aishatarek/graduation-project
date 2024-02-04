@@ -1,5 +1,6 @@
 /* =========== GOOGLE FONTS ========= */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Heebo:wght@300;400;500;600;700;800;900&display=swap");
+
 /* ============================= 
     COMMON CSS
 ================================ */
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #585978;
 }
 
@@ -20,6 +21,8 @@ ul {
 
 a {
   text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
   transition: all 0.3s ease-out 0s;
 }
 
@@ -35,6 +38,12 @@ button {
   .container {
     padding: 0 30px;
   }
+}
+
+.header.header-6 .navbar-brand {
+  position: absolute;
+  top: 0;
+
 }
 
 /* ============ scroll-top =============== */
@@ -168,24 +177,31 @@ button {
   12.5% {
     transform: rotate(135deg);
   }
+
   25% {
     transform: rotate(270deg);
   }
+
   37.5% {
     transform: rotate(405deg);
   }
+
   50% {
     transform: rotate(540deg);
   }
+
   62.5% {
     transform: rotate(675deg);
   }
+
   75% {
     transform: rotate(810deg);
   }
+
   87.5% {
     transform: rotate(945deg);
   }
+
   to {
     transform: rotate(1080deg);
   }
@@ -195,9 +211,11 @@ button {
   0% {
     transform: rotate(130deg);
   }
+
   50% {
     transform: rotate(-5deg);
   }
+
   to {
     transform: rotate(130deg);
   }
@@ -207,9 +225,11 @@ button {
   0% {
     transform: rotate(-130deg);
   }
+
   50% {
     transform: rotate(5deg);
   }
+
   to {
     transform: rotate(-130deg);
   }
@@ -218,39 +238,55 @@ button {
 /* ============================= 
     TYPOGRAPHY CSS
 ================================ */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: 700;
   color: #323450;
   margin-bottom: 0;
   font-family: "Fira Sans", sans-serif;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 80px;
   letter-spacing: .7px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 60px;
   letter-spacing: .7px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 40px;
   letter-spacing: .4px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 30px;
   letter-spacing: .35px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 24px;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 20px;
 }
 
@@ -370,22 +406,31 @@ p {
 ================================ */
 .header {
   background: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
-.headerdiffer{
+
+.headerdiffer {
   background-color: #f3f3f3 !important;
 }
-nav .nav-item a{
+
+nav .nav-item a {
   font-size: 22px !important;
   font-family: 'Spectral', serif;
 
 }
-.headerdiffer .nav-item a{
-color: #2F80ED !important;
+
+.headerdiffer .nav-item a {
+  color: #2F80ED !important;
 }
-nav img{
-height: 100px;
+
+nav img {
+  height: 100px;
 }
+
+.sticky img {
+  height: 50px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header.header-6 .header-action {
     position: absolute;
@@ -407,7 +452,7 @@ height: 100px;
 }
 
 .header.header-6 .navbar {
-  padding:  0 !important;
+  padding: 0 !important;
   border-radius: 0px;
   position: relative;
   transition: all 0.3s ease-out 0s;
@@ -526,7 +571,8 @@ height: 100px;
   }
 }
 
-.header.header-6 .navbar-nav .nav-item a:hover, .header.header-6 .navbar-nav .nav-item a.active {
+.header.header-6 .navbar-nav .nav-item a:hover,
+.header.header-6 .navbar-nav .nav-item a.active {
   color: #c2dcff !important;
   border-color: #2F80ED;
 }
@@ -548,9 +594,11 @@ height: 100px;
     top: 0;
   }
 }
-.dropdown-menu.show{
+
+.dropdown-menu.show {
   background-color: #f3f3f3;
 }
+
 .header.header-6 .navbar-nav .nav-item .sub-menu {
   width: 200px;
   background-color: #ffffff;
@@ -595,7 +643,8 @@ height: 100px;
   color: #000000;
 }
 
-.header.header-6 .navbar-nav .nav-item .sub-menu li a.active, .header.header-6 .navbar-nav .nav-item .sub-menu li a:hover {
+.header.header-6 .navbar-nav .nav-item .sub-menu li a.active,
+.header.header-6 .navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
   color: #2F80ED;
 }
@@ -643,13 +692,16 @@ height: 100px;
   position: relative;
   top: -5px;
 }
-.collapse.show a{
+
+.collapse.show a {
   color: #323450 !important;
 }
-.hero-section-wrapper-5 .header.sticky a{
+
+.hero-section-wrapper-5 .header.sticky a {
   color: #323450 !important;
 
 }
+
 /* ============================= 
     HERO-5 CSS
 ================================ */
@@ -658,59 +710,76 @@ height: 100px;
 
 .FirstSection {
   min-height: 100vh;
-  background-color: #2F80ED;
+  background-color: #01010d;
+  margin-bottom: 300px;
+  background-image: url(../img/human-brain-medical-digital-illustration.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
 }
 
-.FirstSection .swiper {
+.FirstSection img {
+  margin-right: 30px;
+  border-radius: 2%;
+  height: 70vh;
+  position: absolute;
+  bottom: 50px;
+  right: 80px;
+  width: 500px;
+}
+
+.FirstSection .bg {
   width: 100%;
   padding-bottom: 50px;
-  min-height: 100vh;
-
+  min-height: 70vh;
 }
 
-.FirstSection .swiper-slide {
-  background-position: center;
-  background-size: cover;
+.FirstSection .bg {
+
   width: 300px;
-  min-height: 100vh;
+  min-height: 70vh;
   transition-duration: 0ms;
   z-index: 9;
 }
 
-.FirstSection .swiper-slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  min-height: 100vh;
 
-  object-fit: cover;
-}
 
-.FirstSection .swiper-slide {
+.FirstSection .bg {
+
   display: flex;
   align-items: center;
 }
 
-.FirstSection .swiper-slide div {
+.FirstSection .bg div {
+  margin-top: 100px;
+}
+
+
+.FirstSection .bg {
   padding-left: 50px;
 }
 
-.FirstSection .swiper-slide div p {
+.FirstSection .bg p {
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  z-index: 22;
+  width: 800px;
+
+
 }
 
-.FirstSection .swiper-slide div h1 {
+.FirstSection .bg h1 {
   color: white;
   text-transform: uppercase;
   font-family: 'Spectral', serif;
-  font-size: 80px;
+  font-size: 120px;
+  width: 100%;
+  width: 600px;
 }
 
-.FirstSection .swiper-slide div button {
+.FirstSection .bg button {
   outline: 1px solid #2F80ED;
   border: 1px solid #2F80ED;
   outline-offset: 5px;
@@ -721,24 +790,14 @@ height: 100px;
 
 }
 
-.FirstSection .swiper-slide div button:hover {
+.FirstSection .bg button:hover {
   transition: all 0.3s ease-in-out;
   background-color: #2F80ED;
 
 
 }
 
-.FirstSection .swiper-horizontal>.swiper-pagination-bullets,
-.FirstSection .swiper-pagination-bullets.swiper-pagination-horizontal,
-.FirstSection .swiper-pagination-custom,
-.FirstSection .swiper-pagination-fraction {
-  bottom: 100px !important;
-}
 
-.FirstSection .swiper-pagination-bullet-active {
-  background-color: #2F80ED !important;
-
-}
 /* ************************************************** */
 .hero-section-wrapper-5 {
   background: #ffffff;
@@ -904,13 +963,23 @@ height: 100px;
 }
 
 .feature-style-5 .single-feature {
-  padding: 60px 35px;
+  padding: 5px 35px 60px;
   border-radius: 30px;
+  height: 350px;
   margin-bottom: 50px;
   box-shadow: 0px 5px 25px rgba(218, 211, 211, 0.3);
   text-align: center;
   border-bottom: 5px solid #585978;
   transition: all 0.3s ease-out 0s;
+  position: relative;
+}
+
+.feature-style-5 .single-feature::after {
+  position: absolute;
+  top: 49%;
+  background-color: #2F80ED;
+  width: 100%;
+  height: 100%;
 }
 
 .feature-style-5 .single-feature:hover {
@@ -920,16 +989,21 @@ height: 100px;
 
 .feature-style-5 .single-feature .icon {
   color: #2F80ED;
-  font-size: 45px;
+  font-size: 25px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  margin: auto;
-  margin-bottom: 20px;
+  /* margin: auto; */
+  margin-bottom: 0px;
   position: relative;
-  width: 110px;
+  /* width: 110px; */
   height: 100px;
   z-index: 1;
+}
+
+.icon h5 {
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 .feature-style-5 .single-feature .icon svg {
@@ -969,7 +1043,8 @@ height: 100px;
   outline: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .pricing-style-4 .pricing-active-wrapper .tns-controls {
     left: 0;
     width: 100%;
@@ -999,7 +1074,7 @@ height: 100px;
 .pricing-style-4 .pricing-active .single-pricing {
   background: #ffffff;
   border-radius: 5px;
-  margin: 30px  15px;
+  margin: 30px 15px;
   padding: 45px 40px;
   border: 1px solid transparent;
   transition: all 0.3s ease-out 0s;
@@ -1013,7 +1088,8 @@ height: 100px;
   z-index: 9;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .pricing-style-4 .pricing-active .single-pricing {
     padding: 40px 25px;
     margin-bottom: 100px;
@@ -1073,9 +1149,9 @@ height: 100px;
     ABOUT-4 CSS
 ================================ */
 .about-style-4 {
-  background: #F3F3F3;
-  padding: 100px 0 50px;
+  padding: 0px 0 50px;
   position: relative;
+  margin-top: -150px;
   z-index: 1;
 }
 
@@ -1100,12 +1176,65 @@ height: 100px;
 .about-style-4 .about-image {
   margin-top: 30px;
 }
+
 .about-style-4 .about-image img {
   width: 100%;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px) {
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+(max-width: 767px) {
   .about-style-4 .about-image img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width:786px) {
+
+  .FirstSection {
+    min-height: 120vh;
+    margin-bottom: 100px;
+
+  }
+
+  .FirstSection img {
+
+    height: 34vh;
+    bottom: 50px;
+    width: 300px;
+  }
+
+  .FirstSection .bg {
+
+    min-height: 120vh;
+  }
+
+
+  .FirstSection .bg div {
+    margin-top: -100px;
+  }
+
+  .FirstSection .bg p {
+    font-size: 15px;
+    width: 300px;
+  }
+
+  .FirstSection .bg h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Spectral', serif;
+    font-size: 40px;
+    width: 100%;
+    width: 300px;
+  }
+
+  .about-style-4 {
+    margin-top: 0;
+  }
+
+  .header.header-6 .navbar-brand {
+    position: absolute;
+    top: 0;
+    right: 100px;
   }
 }
 
@@ -1198,7 +1327,8 @@ height: 100px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .contact-style-3 .left-wrapper {
     margin-top: 50px;
   }
@@ -1397,11 +1527,15 @@ height: 100px;
   margin: 3px 8px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   transition: all 0.3s ease-out 0s;
 }
 
-input:focus, textarea:focus, button:focus {
+input:focus,
+textarea:focus,
+button:focus {
   outline: none;
   box-shadow: none;
 }
