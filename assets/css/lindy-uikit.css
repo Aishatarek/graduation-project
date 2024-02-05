@@ -827,10 +827,12 @@ nav img {
   background: #ffffff !important;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
-.header.sticky{
+
+.header.sticky {
   background: #ffffff !important;
-z-index: 111111;
+  z-index: 111111;
 }
+
 .hero-section-wrapper-5 .hero-style-5 {
   position: relative;
   z-index: 1;
@@ -1205,9 +1207,10 @@ z-index: 111111;
   }
 
   .FirstSection img {
+    right: 15px;
 
     height: 34vh;
-    bottom: 50px;
+    bottom: -122px;
     width: 300px;
   }
 
@@ -1225,20 +1228,24 @@ z-index: 111111;
     font-size: 15px;
     width: 300px;
   }
-
+  .FirstSection .bg p {
+    color: #323450;
+  }
   .FirstSection .bg h1 {
-    color: #1434A4;
-    text-transform: uppercase;
-    font-family: 'Spectral', serif;
+    color: #0077B6;
+    margin-top: 90px;
     font-size: 40px;
     width: 100%;
     width: 300px;
   }
 
   .about-style-4 {
-    margin-top: 0;
+    margin-top: 215px;
   }
+.sticky.header{
 
+  height: 50px;
+}
   .header.header-6 .navbar-brand {
     position: absolute;
     top: 0;
