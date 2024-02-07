@@ -1,10 +1,13 @@
 /* =========== GOOGLE FONTS ========= */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Heebo:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blanka');
+@import url('https://fonts.cdnfonts.com/css/lovelo?styles=25962');
 
 /* ============================= 
     COMMON CSS
 ================================ */
+
 html {
   scroll-behavior: smooth;
 }
@@ -716,25 +719,27 @@ nav img {
   /* background-image: url(../img/human-brain-medical-digital-illustration.jpg); */
   background-size: cover;
   display: flex;
+
   justify-content: space-between;
 }
 
 .FirstSection img {
   margin-right: 30px;
   border-radius: 2%;
-  height: 70vh;
+  object-fit: contain;
+  /* height: 70vh; */
   position: absolute;
-  bottom: 50px;
+  bottom: 120px;
   right: 80px;
   /* box-shadow: rgba(1, 144, 221, 0.25) 0px 54px 55px, rgba(1, 144, 221, 0.12) 0px -12px 30px, rgba(1, 144, 221, 0.12) 0px 4px 6px, rgba(1, 144, 221, 0.17) 0px 12px 13px, rgba(1, 144, 221, 0.09) 0px -3px 5px; */
-  box-shadow: rgba(1, 144, 221, 0.4) 0px 30px 90px;
-  width: 500px;
+  /* box-shadow: rgba(1, 144, 221, 0.4) 0px 30px 90px; */
+  width: 700px;
 }
 
 .FirstSection .bg {
   width: 100%;
   padding-bottom: 50px;
-  min-height: 70vh;
+  min-height: 50vh;
 }
 
 .FirstSection .bg {
@@ -770,37 +775,35 @@ nav img {
   z-index: 22;
   width: 600px;
 
-
 }
 
 .FirstSection .bg h1 {
-  color: #0077B6;
-  text-transform: uppercase;
-  font-family: 'Protest Riot', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  color: #0182ee;
+  font-family: 'Lovelo', sans-serif;
+  margin-top: 20px;
+  font-weight: 500;
   font-size: 120px;
   width: 100%;
-  width: 600px;
+  width: 550px;
+}
+
+.FirstSection .bg h1 span {
+  font-family: 'Blanka', sans-serif;
+
 }
 
 .FirstSection .bg button {
-  outline: 1px solid #0190dd;
-  border: 1px solid #0190dd;
-  background-color: #0190dd;
-
-  outline-offset: 5px;
-  padding: 10px 40px;
-  color: white;
-  margin-top: 35px;
-
+  margin-top: 40px;
 }
+
+/* 
 
 .FirstSection .bg button:hover {
   transition: all 0.3s ease-in-out;
   background-color: #0190dd;
 
 
-}
+} */
 
 
 /* ************************************************** */
@@ -1188,13 +1191,25 @@ nav img {
 }
 
 .about-style-4 .about-image img {
-  width: 100%;
+  width: 80%;
+  object-fit: contain;
+}
+
+.about-style-4 .about-image.newimg img {
+  width: 70%;
+  margin-left: 60px;
+  object-fit: contain;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 (max-width: 767px) {
   .about-style-4 .about-image img {
     width: 100%;
+  }
+
+  .about-style-4 .about-image img {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
@@ -1228,9 +1243,11 @@ nav img {
     font-size: 15px;
     width: 300px;
   }
+
   .FirstSection .bg p {
     color: #323450;
   }
+
   .FirstSection .bg h1 {
     color: #0077B6;
     margin-top: 90px;
@@ -1242,10 +1259,16 @@ nav img {
   .about-style-4 {
     margin-top: 215px;
   }
-.sticky.header{
 
-  height: 50px;
-}
+  .about-style-4 .row.dire {
+    flex-direction: column-reverse;
+  }
+
+  .sticky.header {
+
+    height: 50px;
+  }
+
   .header.header-6 .navbar-brand {
     position: absolute;
     top: 0;
